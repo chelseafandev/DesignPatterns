@@ -8,6 +8,9 @@
 <br>
 
 ## Creational Patterns
+생성 패턴은 다양한 객체 생성 메커니즘을 제공하며 이를 통해 코드에 유연성을 더하고 기존 코드를 재사용하게 해줍니다.
+> Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+
 ### Singleton
 
 [소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/singleton.cpp)
