@@ -1,5 +1,12 @@
 # DesignPatterns
 
+- [DesignPatterns](#designpatterns)
+  - [Creational Patterns](#creational-patterns)
+    - [Singleton](#singleton)
+    - [Abstract Factory](#abstract-factory)
+
+<br>
+
 ## Creational Patterns
 ### Singleton
 
