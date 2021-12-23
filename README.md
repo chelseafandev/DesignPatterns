@@ -76,7 +76,7 @@
 
 ### State
 
-[소스 코드로 이동]()
+[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/tree/main/state)
 
 상태 패턴은 객체의 내부 상태가 변경될 때 그것(object)이 행위를 변경하도록 하는 행위 디자인 패턴입니다. 이것은 마치 객체가 클래스를 변경한 것처럼 보입니다.
 > State is a behavioral design pattern that lets an object alter its behavior when its internal state changes. It appears as if the object changed its class.
