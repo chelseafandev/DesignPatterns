@@ -4,6 +4,8 @@
   - [Creational Patterns](#creational-patterns)
     - [Singleton](#singleton)
     - [Abstract Factory](#abstract-factory)
+  - [Structural Patterns](#structural-patterns)
+    - [Adapter](#adapter)
   - [Behavioral Patterns](#behavioral-patterns)
     - [State](#state)
 
@@ -66,6 +68,39 @@
 
 **reference**
 - https://refactoring.guru/design-patterns/abstract-factory
+
+<br>
+<br>
+
+## Structural Patterns
+구성에 관한 패턴은 객체들과 클래스들을 좀 더 큰 구조들로 조합하고 이러한 구조를 유연하고 효과적으로 유지하는 방법에 대해 설명합니다.
+> Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
+
+### Adapter
+어댑터 패턴은 서로 호환성이 없는 인터페이스를 갖는 객체들이 협력할 수 있도록 해주는 구성에 관한 디자인 패턴입니다.
+> Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
+
+1. 여러분은 적어도 서로 호환성이 없는 인터페이스를 갖는 클래스가 2개는 있어야한다는 것을 확실히 하셔야합니다.
+   - 여러분이 변경할 수 없는 유용한 서비스 클래스
+   - 서비스 클래스를 사용함으로써 이득을 보게되는 하나 이상의 클라이언트 클래스
+2. 클라이언트 인터페이스를 선언하고 서비스와 클라이언트가 어떻게 통신할지를 명시하자.
+3. 2번에서 생성한 클라이언트 인터페이스의 규칙을 따르는 어댑터 클래스를 생성하자. 일단 여기까지는 모든 메소드들의 구현을 비워 두자.
+4. 어댑터 클래스에 서비스 객체에 대한 참조를 저장하는 변수를 추가하자. 일반적으로 생성자를 통해 이 변수를 초기화하지만, 때로는 어댑터 클래스의 메소드를 호출할때 서비스 객체 정보를 어댑터 클래스에 전달하는것이 좀 더 편리합니다.
+5. 어댑터 클래스에서 클라이언트 인터페이스에서 정의한 모든 메소드들을 하나씩 구현하자. 어댑터는 인터페이스를 처리하거나 데이터 포맷을 변환하는 것과 같은 단순한 작업 이외의 실제 중요한 작업들을 서비스 객체에게 위임해야합니다.
+6. 클라이언트는 클라이언트 인터페이스를 통해서 어댑터를 사용해야합니다. 이것은 클라이언트 코드에 영향 없이 어댑터를 변경하거나 확장하도록 해줍니다.
+> 1. Make sure that you have at least two classes with incompatible interfaces:
+> - A useful service class, which you can’t change (often 3rd-party, legacy or with lots of existing dependencies).
+> - One or several client classes that would benefit from using the service class.
+> 2. Declare the client interface and describe how clients communicate with the service.
+> 3. Create the adapter class and make it follow the client interface. Leave all the methods empty for now.
+> 4. Add a field to the adapter class to store a reference to the service object. The common practice is to initialize this field via the constructor, but sometimes it’s more convenient to pass it to the adapter when calling its methods.
+> 5. One by one, implement all methods of the client interface in the adapter class. The adapter should delegate most of the real work to the service object, handling only the interface or data format conversion.
+> 6. Clients should use the adapter via the client interface. This will let you change or extend the adapters without affecting the client code.
+
+<br>
+
+**reference**
+- https://refactoring.guru/design-patterns/adapter
 
 <br>
 <br>
