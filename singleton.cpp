@@ -28,11 +28,6 @@ private:
         
     }
 
-    ~my_singleton()
-    {
-
-    }
-
     static my_singleton* instance_ptr_;
     static std::mutex mutex_; // get_instance() 함수를 thread-safe하게 만들기위해 mutex를 사용함
 };
