@@ -17,7 +17,7 @@
 
 ### Singleton
 
-[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/singleton.cpp)
+[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/singleton/singleton.cpp)
 
 싱글톤 패턴은 당신에게 이 클래스는 오직 한개의 인스턴스만을 가지며, 이 인스턴스에대한 전역적인 접근 방식을 제공한다는 사실을 보장해주는 생성과 관련된 디자인 패턴입니다.
 > **Singleton** is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance.
@@ -46,7 +46,7 @@
 
 ### Abstract Factory
 
-[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/abstractfactory.cpp)
+[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/tree/main/abstractfactory)
 
 추상 팩토리 패턴은 당신에게 객체들의 구현 클래스들을 구체적으로 명시하지 않으면서도 연관된 객체들의 집합을 제공하는 생성과 관련된 디자인 패턴입니다.
 > **Abstract Factory** is a creational design pattern that lets you produce families of related objects without specifying their concrete classes.
@@ -78,7 +78,7 @@
 
 ### Adapter
 
-[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/adapter.cpp)
+[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/adapter)
 
 어댑터 패턴은 서로 호환성이 없는 인터페이스를 갖는 객체들이 협력할 수 있도록 해주는 구성에 관한 디자인 패턴입니다.
 > Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
