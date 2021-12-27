@@ -77,6 +77,9 @@
 > Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.
 
 ### Adapter
+
+[소스 코드로 이동](https://github.com/chelseafandev/DesignPatterns/blob/main/adapter.cpp)
+
 어댑터 패턴은 서로 호환성이 없는 인터페이스를 갖는 객체들이 협력할 수 있도록 해주는 구성에 관한 디자인 패턴입니다.
 > Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate.
 
