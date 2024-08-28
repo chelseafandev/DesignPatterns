@@ -6,6 +6,7 @@
     - [Abstract Factory](#abstract-factory)
   - [Structural Patterns](#structural-patterns)
     - [Adapter](#adapter)
+    - [Facade](#facade)
   - [Behavioral Patterns](#behavioral-patterns)
     - [State](#state)
 
